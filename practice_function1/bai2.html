@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <p>
+        <label>Đối số nhập vào là:</label>
+        <input type="number"
+               oninput="increase(this.value)"
+        >
+    </p>
+    <p>Giá trị cần tìm: <span id="output"></span></p>
+</form>
+
+<script>
+    function increase(a) {
+        let opt = parseFloat(a);
+        document.getElementById("output").innerHTML = opt + 1;
+    }
+</script>
+</body>
+</html>

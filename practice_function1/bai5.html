@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let getStar = prompt("Ten cua ngoi sao ban can tim la: ")
+    let star = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+    let constellation = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
+
+
+    function checkStar() {
+        for (let i = 0; i < star.length; i++) {
+            if (getStar === star[i]) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    let index = checkStar()
+    if (index !== -1) {
+        document.write(constellation[index]);
+    } else {
+        document.write("khong tim thay");
+    }
+
+
+</script>
+</body>
+</html>
