@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="show"></p>
+<script>
+  let arr1 = [1,3,5,2,6,8,9]
+  function reverseNumbers(arr){
+      let first = 0;
+      let last = arr.length-1;
+      while (first < last){
+          let temp = arr[first];
+          arr[first] = arr[last];
+          arr[last] = temp;
+          first++;
+          last--;
+      }
+      return arr;
+  }
+  document.getElementById("show").innerHTML = (reverseNumbers(arr1)) ;
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("so nguyen thu nhat la:");
+    let b = prompt("so nguyen thu hai la:");
+    let c = prompt("so nguyen thu ba la:");
+    let min;
+  function checkMin(){
+      if (a<b && a<c){
+          min = a;
+      }else if(b<a && b<c){
+          min = b;
+      }else{
+          min = c;
+      }
+return min;
+  }
+  alert(checkMin())
+</script>
+</body>
+</html>
