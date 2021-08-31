@@ -1,0 +1,15 @@
+button{
+    background-color: limegreen;
+    color: ghostwhite;
+}
+table{
+    background-color: antiquewhite;
+    width:35%
+}
+tr td input{
+    width: 300px;
+    height: 30px;
+}
+#countProduct{
+    color: red;
+}
