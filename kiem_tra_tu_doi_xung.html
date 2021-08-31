@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = window.prompt("");
+    let arr = str.split("");
+    let mid = arr.length/2;
+
+
+    function isPalindrome(arr){
+        for ( let i = 0; i < mid; i++ ) {
+            if (str[i] !== str[arr.length - 1 - i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+document.write(isPalindrome(arr));
+</script>
+</body>
+</html>
